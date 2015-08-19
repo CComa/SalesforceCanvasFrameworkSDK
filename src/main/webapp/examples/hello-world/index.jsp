@@ -1,6 +1,7 @@
 <%@ page import="canvas.SignedRequest" %>
 <%@ page import="java.util.Map" %>
 <%
+    //CHC Test auto deploy comment.
     // Pull the signed request out of the request body and verify/decode it.
     Map<String, String[]> parameters = request.getParameterMap();
     String[] signedRequest = parameters.get("signed_request");
