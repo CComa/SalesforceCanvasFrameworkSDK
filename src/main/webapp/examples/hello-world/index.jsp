@@ -9,9 +9,10 @@
         CHC - This App must be invoked via a signed request!<%
         return;
     }
-    //String yourConsumerSecret=System.getenv("CANVAS_CONSUMER_SECRET");
+    // Editted this value in Heroku App - Settings > Reveal Config Vars button.
+    String yourConsumerSecret=System.getenv("CANVAS_CONSUMER_SECRET");
     //String yourConsumerSecret="1818663124211010887";
-    String yourConsumerSecret="9041928516156661615";
+    //String yourConsumerSecret="9041928516156661615";
     String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);
 %>
 
